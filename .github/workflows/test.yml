@@ -38,3 +38,5 @@ jobs:
         run: |
           forge test -vvv
         id: test
+        env:
+          ANVIL_PRIVATE_KEY: ${{ secrets.ANVIL_PRIVATE_KEY }}
